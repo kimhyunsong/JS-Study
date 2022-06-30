@@ -19,9 +19,12 @@
   // 공백 텍스트 노드는 후에 언급;
   const {childNodes} = $fruits;
   console.log(childNodes);
+  console.log($fruits.childNodes)
   for (let i = 0; i< childNodes.length; i++){
     $fruits.removeChild(childNodes[i]);
+    console.log($fruits.childNodes)
   }
+  console.log($fruits.childNodes)
   // 삭제가 안된다.
   console.log(childNodes);
 </script>
