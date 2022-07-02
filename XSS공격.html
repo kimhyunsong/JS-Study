@@ -8,10 +8,12 @@
 </head>
 <body>
   <div id="kim">ㅎㅇ</div>
-
+  <input id="input" style="width:30px; height:30px;" value=""></input>
 </body>
 <script>
   //자바스크립트 코드 강제 실행 가능
+  let input = document.getElementById("input")
+  input.value = 'ddd'
   document.getElementById("kim").innerHTML = `<img src="x" onerror="alert(document.cookie)">`; 
 </script>
 </html>

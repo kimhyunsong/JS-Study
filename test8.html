@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="fruits"></ul>
+</body>
+<script>
+  const $fruits = document.getElementById("fruits")
+
+  const $container = document.createElement("div")
+  // 이거 왜 변수에 안담으면 실행 안되는지 찾아보기
+  const fArr =   ["apple", "samsung", "lg"]
+  fArr.forEach(text => {
+    const $li = document.createElement("li")
+    const textNode = document.createTextNode(text)
+    $li.appendChild(textNode)
+    $container.appendChild($li);
+  });
+  $fruits.appendChild($container)
+
+  
+</script>
+</html>

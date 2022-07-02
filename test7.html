@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--beforebegin-->
+  <div id="foo">
+  <!--afterbegin-->
+  text
+  <!--beforend-->
+  </div>
+  <!--afterend-->
+  
+</body>
+<script>
+  //왜안되지...
+  const $foo = document.getElementById("foo");
+  $foo.insertAdjacentElement("beforebegin", '<p>sdfnkjsn</p>')
+  $foo.insertAdjacentElement("afterbegin", "<p>클릭 ㄷㄷ</p>")
+  $foo.insertAdjacentElement("beforend", "<p>클릭 ㄱㄱ</p>")
+  $foo.insertAdjacentElement("afterend", "<p>클릭 ㅇㅇ</p>")
+</script>
+</html>
