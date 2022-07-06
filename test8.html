@@ -7,21 +7,22 @@
   <title>Document</title>
 </head>
 <body>
-  <ul id="fruits"></ul>
+  <ul id="fruits">
+  </ul>
 </body>
 <script>
   const $fruits = document.getElementById("fruits")
 
-  const $container = document.createElement("div")
+  const $조각 = document.createDocumentFragment();
   // 이거 왜 변수에 안담으면 실행 안되는지 찾아보기
   const fArr =   ["apple", "samsung", "lg"]
   fArr.forEach(text => {
     const $li = document.createElement("li")
     const textNode = document.createTextNode(text)
     $li.appendChild(textNode)
-    $container.appendChild($li);
+    $조각.appendChild($li);
   });
-  $fruits.appendChild($container)
+  $fruits.appendChild($조각)
 
   
 </script>
