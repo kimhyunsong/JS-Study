@@ -9,14 +9,22 @@
 <body>
   <div style="color: red">Hello World</div>
   <script>
-    const $div = document.querySelector("div");
-    console.log($div.style)
+    // const $div = document.querySelector("div");
+    // console.log($div.style)
 
-    $div.style.color = "blue";
-    $div.style.width = "100px";
-    $div.style.height = "100px";
-    //$div.style.backgroundColor = "yellow"
-    $div.style["background-color"] = "yellow"
+    // $div.style.color = "blue";
+    // $div.style.width = "100px";
+    // $div.style.height = "100px";
+    // //$div.style.backgroundColor = "yellow"
+    // $div.style["background-color"] = "yellow"
+
+
+    var x = "AAA";
+    const arr = {"AAA":"0", "BBB":"0", "CCC":"0" }
+    console.log(arr[x]);
+    console.log(arr["AAA"])
+    console.log(arr.x);
+
   </script>
 </body>
 </html>
