@@ -18,7 +18,7 @@
     $fruits.addEventListener("click", e=>{
       console.log(`이벤트 단계 : ${e.eventPhase}`); // 3 - 버블링 단계
       console.log(`이벤트 타깃 : ${e.target}`);
-      console.log(`이벤트 단계 : ${e.currentTarget}`);
+      console.log(` : ${e.currentTarget}`);
 
 
       $banana.addEventListener("click", e=>{
